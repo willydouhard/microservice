@@ -49,11 +49,9 @@ describe('Order micro service', () => {
         request(app)
         .post('/orders')
         .send({id: 1})
-        .set('Accept', /application\/json/)
         .expect(200, {
             id: 1
         }, done)
-
     })
 
 })
